@@ -6,6 +6,7 @@ using Xunit;
 
 namespace blog_template_practice.Tests
 {
+    //dummy commit
     public class ContentTests
     {
         Content sut;
