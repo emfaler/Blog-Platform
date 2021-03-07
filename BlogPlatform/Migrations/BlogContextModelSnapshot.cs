@@ -65,8 +65,8 @@ namespace BlogPlatform.Migrations
 
             modelBuilder.Entity("blog_template_practice.Models.Content", b =>
                 {
-                    b.HasOne("blog_template_practice.Models.Category", "Category")
-                        .WithMany()
+                    b.HasOne("blog_template_practice.Models.Category", null)
+                        .WithMany("Contents")
                         .HasForeignKey("CategoryId");
                 });
 #pragma warning restore 612, 618

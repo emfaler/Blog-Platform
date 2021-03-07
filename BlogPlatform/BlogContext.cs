@@ -24,13 +24,26 @@ namespace blog_template_practice
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Add seed data for Category model:
-            //modelBuilder.Entity<Category>().HasData(
-            //    );
+            //Add seed data for Category model:
+            modelBuilder.Entity<Category>().HasData(
+                new Category()
+                {
+                    Id = 1,
+                    Name = "Cooking"
+                }
+                ); 
 
             // Add seed data for Content model:
-            //modelBuilder.Entity<Content>().HasData(
-            //    );
+            modelBuilder.Entity<Content>().HasData(
+                new Content()
+                {
+                    Id = 1,
+                    Title = "Italian 101",
+                    Body = "EVOO, Fresh herbs, and carbs.",
+                    Author = "Ina Garten",
+                    PublishDate = ""
+                }
+                );
 
             base.OnModelCreating(modelBuilder);
         }
