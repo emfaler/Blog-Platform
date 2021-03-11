@@ -1,7 +1,14 @@
-﻿
+﻿@model IEnumerable<blog_template_practice.Models.Category>
 @{
     Layout = null; 
 }
 
-<h1>Index</h1>
+<h1>Categories</h1>
+
+<ul>
+    @foreach(var cat in Model)
+    {
+        <li>@cat.Name</li>
+    }
+</ul>
 

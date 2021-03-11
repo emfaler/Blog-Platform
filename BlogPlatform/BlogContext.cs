@@ -14,7 +14,7 @@ namespace blog_template_practice
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=BlogDB_templatetest;Trusted_Connection=True;";
+            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=BlogDB5;Trusted_Connection=True;";
 
             optionsBuilder.UseSqlServer(connectionString)
                 .UseLazyLoadingProxies();
@@ -30,6 +30,16 @@ namespace blog_template_practice
                 {
                     Id = 1,
                     Name = "Cooking"
+                },
+                new Category()
+                {
+                    Id = 2,
+                    Name = "Culture"
+                },
+                new Category()
+                {
+                    Id = 3,
+                    Name = "Travel"
                 }
                 ); 
 
@@ -38,10 +48,29 @@ namespace blog_template_practice
                 new Content()
                 {
                     Id = 1,
+                    CategoryId = 1,
                     Title = "Italian 101",
                     Body = "EVOO, Fresh herbs, and carbs.",
                     Author = "Ina Garten",
-                    PublishDate = ""
+                    //PublishDate = DateTime.Now
+                },
+                new Content()
+                {
+                    Id = 2,
+                    CategoryId = 2,
+                    Title = "Podcast Mania",
+                    Body = "So many new podcasts to listen. Here are our picks.",
+                    Author = "Ira Glass",
+                    //PublishDate = DateTime.Now
+                },
+                new Content()
+                {
+                    Id = 3,
+                    CategoryId = 3,
+                    Title = "Norway In a Day",
+                    Body = "Hop on a train and get moving",
+                    Author = "Rick Steves",
+                    //PublishDate = DateTime.Now
                 }
                 );
 

@@ -11,7 +11,6 @@ namespace blog_template_practice.Controllers
     public class CategoryController : Controller
     {
         IRepository<Category> categoryRepo;
-
         public CategoryController(IRepository<Category> categoryRepo)
         {
             this.categoryRepo = categoryRepo;
@@ -24,20 +23,20 @@ namespace blog_template_practice.Controllers
             return View(categoryList);
         }
 
-        public ViewResult Details(int id)
-        {
-            var category = categoryRepo.GetById(id);
+        //public ViewResult Details(int id)
+        //{
+        //    var category = categoryRepo.GetById(id);
 
-            return View(category);
-        }
-
-       
-        
+        //    return View(category);
+        //}
 
 
 
 
 
-        
+
+
+
+
     }
 }
