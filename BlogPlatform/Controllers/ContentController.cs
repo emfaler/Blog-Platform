@@ -30,6 +30,20 @@ namespace blog_template_practice.Controllers
             return View(content);
         }
 
+        public ViewResult Create()
+        {
+            return View(new Content());
+        }
+
+        [HttpPost]
+        public ViewResult Create(Content model)
+        {
+
+            contentRepo.Create(model);
+            ViewBag.Result = "You have created a post.";
+            return View(model);
+        }
+
         
         
 

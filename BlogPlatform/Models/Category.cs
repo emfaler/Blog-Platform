@@ -14,7 +14,7 @@ namespace blog_template_practice.Models
 
 
 
-
+        
 
 
         //public Category()

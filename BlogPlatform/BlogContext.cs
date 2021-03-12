@@ -49,7 +49,7 @@ namespace blog_template_practice
                 {
                     Id = 1,
                     CategoryId = 1,
-                    Title = "Italian 101",
+                    Title = "Italian Cooking 101",
                     Body = "EVOO, Fresh herbs, and carbs.",
                     Author = "Ina Garten",
                     //PublishDate = DateTime.Now
@@ -68,6 +68,33 @@ namespace blog_template_practice
                     Id = 3,
                     CategoryId = 3,
                     Title = "Norway In a Day",
+                    Body = "Hop on a train and get moving",
+                    Author = "Rick Steves",
+                    //PublishDate = DateTime.Now
+                },
+                new Content()
+                {
+                    Id = 4,
+                    CategoryId = 1,
+                    Title = "Venice",
+                    Body = "The canals do not smell and are great for long rides on a hot day",
+                    Author = "Tanzena Vega",
+                    //PublishDate = DateTime.Now
+                },
+                new Content()
+                {
+                    Id = 5,
+                    CategoryId = 2,
+                    Title = "New Music Friday",
+                    Body = "Britney's new single is an offensively crafted BOP for the ages.",
+                    Author = "Michelle Pfiefer",
+                    //PublishDate = DateTime.Now
+                },
+                new Content()
+                {
+                    Id = 6,
+                    CategoryId = 3,
+                    Title = "",
                     Body = "Hop on a train and get moving",
                     Author = "Rick Steves",
                     //PublishDate = DateTime.Now

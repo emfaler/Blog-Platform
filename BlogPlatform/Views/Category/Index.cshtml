@@ -2,13 +2,13 @@
 @{
     Layout = null; 
 }
-
+@*Homepage*@
 <h1>Categories</h1>
 
 <ul>
     @foreach(var cat in Model)
     {
-        <li>@cat.Name</li>
+        <li><a href="/Content/Details/@cat.Id.">@cat.Name</a></li>
     }
 </ul>
 

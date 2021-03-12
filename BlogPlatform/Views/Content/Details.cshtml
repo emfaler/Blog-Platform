@@ -14,7 +14,8 @@
 <body>
 
 <div>
-    <h4>Content</h4>
+    <h4>Content Details</h4>
+    <p><a href="/Content/Create">Create Content</a></p>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -51,7 +52,7 @@
 </div>
 <div>
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" href="/Category">Back to Category List</a>
 </div>
 </body>
 </html>
