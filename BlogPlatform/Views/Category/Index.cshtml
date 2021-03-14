@@ -5,10 +5,9 @@
 @*Homepage*@
 <h1>Categories</h1>
 
-<ul>
+
     @foreach(var cat in Model)
     {
-        <li><a href="/Content/Details/@cat.Id.">@cat.Name</a></li>
+        <p><a href="/Category/Details/@cat.Id">@cat.Name</a></p>
     }
-</ul>
-
+<p><a href="/Content/Index">Back To Content</a></p>

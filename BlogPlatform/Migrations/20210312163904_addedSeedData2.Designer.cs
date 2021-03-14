@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using blog_template_practice;
 
 namespace BlogPlatform.Migrations
 {
     [DbContext(typeof(BlogContext))]
-    partial class BlogContextModelSnapshot : ModelSnapshot
+    [Migration("20210312163904_addedSeedData2")]
+    partial class addedSeedData2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -86,7 +88,7 @@ namespace BlogPlatform.Migrations
                             Author = "Ina Garten",
                             Body = "EVOO, Fresh herbs, and carbs.",
                             CategoryId = 1,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 350, DateTimeKind.Local).AddTicks(7593),
+                            PublishDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Italian Cooking 101"
                         },
                         new
@@ -95,7 +97,7 @@ namespace BlogPlatform.Migrations
                             Author = "Ira Glass",
                             Body = "So many new podcasts to listen. Here are our picks.",
                             CategoryId = 2,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 361, DateTimeKind.Local).AddTicks(4196),
+                            PublishDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Podcast Mania"
                         },
                         new
@@ -104,7 +106,7 @@ namespace BlogPlatform.Migrations
                             Author = "Rick Steves",
                             Body = "Hop on a train and get moving",
                             CategoryId = 3,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 361, DateTimeKind.Local).AddTicks(4331),
+                            PublishDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Norway In a Day"
                         },
                         new
@@ -113,7 +115,7 @@ namespace BlogPlatform.Migrations
                             Author = "Tanzena Vega",
                             Body = "The canals do not smell and are great for long rides on a hot day",
                             CategoryId = 1,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 361, DateTimeKind.Local).AddTicks(4340),
+                            PublishDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Venice"
                         },
                         new
@@ -122,24 +124,24 @@ namespace BlogPlatform.Migrations
                             Author = "Michelle Pfiefer",
                             Body = "Britney's new single is an offensively crafted BOP for the ages.",
                             CategoryId = 2,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 361, DateTimeKind.Local).AddTicks(4348),
+                            PublishDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "New Music Friday"
                         },
                         new
                         {
                             Id = 6,
-                            Author = "Gloria Estaban",
-                            Body = "You can go anywhere with these direct flights to top destinations.",
+                            Author = "Rick Steves",
+                            Body = "Hop on a train and get moving",
                             CategoryId = 3,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 361, DateTimeKind.Local).AddTicks(4357),
-                            Title = "50 Direct Flights"
+                            PublishDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Title = ""
                         });
                 });
 
             modelBuilder.Entity("blog_template_practice.Models.Content", b =>
                 {
                     b.HasOne("blog_template_practice.Models.Category", "Category")
-                        .WithMany("Content")
+                        .WithMany("Posts")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

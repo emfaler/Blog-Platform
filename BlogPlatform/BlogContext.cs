@@ -52,7 +52,7 @@ namespace blog_template_practice
                     Title = "Italian Cooking 101",
                     Body = "EVOO, Fresh herbs, and carbs.",
                     Author = "Ina Garten",
-                    //PublishDate = DateTime.Now
+                    PublishDate = DateTime.Now
                 },
                 new Content()
                 {
@@ -61,7 +61,7 @@ namespace blog_template_practice
                     Title = "Podcast Mania",
                     Body = "So many new podcasts to listen. Here are our picks.",
                     Author = "Ira Glass",
-                    //PublishDate = DateTime.Now
+                    PublishDate = DateTime.Now
                 },
                 new Content()
                 {
@@ -70,7 +70,7 @@ namespace blog_template_practice
                     Title = "Norway In a Day",
                     Body = "Hop on a train and get moving",
                     Author = "Rick Steves",
-                    //PublishDate = DateTime.Now
+                    PublishDate = DateTime.Now
                 },
                 new Content()
                 {
@@ -79,7 +79,7 @@ namespace blog_template_practice
                     Title = "Venice",
                     Body = "The canals do not smell and are great for long rides on a hot day",
                     Author = "Tanzena Vega",
-                    //PublishDate = DateTime.Now
+                    PublishDate = DateTime.Now
                 },
                 new Content()
                 {
@@ -88,16 +88,16 @@ namespace blog_template_practice
                     Title = "New Music Friday",
                     Body = "Britney's new single is an offensively crafted BOP for the ages.",
                     Author = "Michelle Pfiefer",
-                    //PublishDate = DateTime.Now
+                    PublishDate = DateTime.Now
                 },
                 new Content()
                 {
                     Id = 6,
                     CategoryId = 3,
-                    Title = "",
-                    Body = "Hop on a train and get moving",
-                    Author = "Rick Steves",
-                    //PublishDate = DateTime.Now
+                    Title = "50 Direct Flights",
+                    Body = "You can go anywhere with these direct flights to top destinations.",
+                    Author = "Gloria Estaban",
+                    PublishDate = DateTime.Now
                 }
                 );
 

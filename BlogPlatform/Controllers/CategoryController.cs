@@ -30,13 +30,5 @@ namespace blog_template_practice.Controllers
             return View(category);
         }
 
-
-
-
-
-
-
-
-
     }
 }

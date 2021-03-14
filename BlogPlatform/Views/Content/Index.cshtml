@@ -1,15 +1,34 @@
 ﻿@model IEnumerable<blog_template_practice.Models.Content>
 
 @{
-    Layout = null; 
+    Layout = null;
 }
 
-<h1>Content Index</h1>
+<!DOCTYPE html>
 
-<ul>
-    @foreach (var cat in Model)
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Content Index</title>
+    <link rel="StyleSheet" type="text/css" href="~/Styles/StyleSheet.css" />
+</head>
+<body>
+    <h1>Content Index</h1>
+
+
+    @foreach (var content in Model)
     {
-        <li>@cat.Title</li>
-    }
-</ul>
 
+        <div class="box">
+            <div class="content">
+                <h2 class="contentTitle">Title: <a href="/Content/Details/@content.Id">@content.Title</a></h2>
+                <p>Author: @content.Author</p>
+            </div>
+        </div>
+    }
+
+    <a href="/Content/Create/"><button id="createButton">Create Post</button></a>
+
+    <a href="/Category/Index"><button id="createButton">Categories</button></a>
+</body>
+</html>

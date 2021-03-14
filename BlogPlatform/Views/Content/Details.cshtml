@@ -1,5 +1,4 @@
-﻿@model blog_template_practice.Models.Content
-
+﻿@model blog_template_practice.Models.Content 
 @{
     Layout = null;
 }
@@ -12,47 +11,16 @@
     <title>Details</title>
 </head>
 <body>
+    <div class="box">
+        <div class="contentList">
+            <h2>Title: @Model.Title</h2>
+            <p>Name: @Model.Author</p>
+            <p>Date: @Model.PublishDate</p>
+            <p>@Model.Body</p>
+            <a href="/Content/Update/@Model.Id"><button id="createButton">Edit Post</button></a> <a href="/Content/Delete/@Model.Id"><button id="createButton">Delete Post</button></a>
+        </div>
+    </div>
 
-<div>
-    <h4>Content Details</h4>
-    <p><a href="/Content/Create">Create Content</a></p>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Body)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Body)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Author)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Author)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CategoryId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CategoryId)
-        </dd>
-    </dl>
-</div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index" href="/Category">Back to Category List</a>
-</div>
+    <a href="/Content/Index"><button id="createButton">Back to Contents</button></a>
 </body>
 </html>

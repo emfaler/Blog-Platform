@@ -10,7 +10,7 @@ namespace blog_template_practice.Models
         public string Title { get; set; }
         public string Body { get; set; }
         public string Author { get; set; }
-        //public DateTime PublishDate { get; set; }
+        public DateTime PublishDate { get; set; }
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
@@ -25,13 +25,13 @@ namespace blog_template_practice.Models
 
         }
 
-        public Content(int id, string title, string body, string author)
+        public Content(int id, string title, string body, string author, DateTime publishDate)
         {
             Id = id;
             Title = title;
             Body = body;
             Author = author;
-            //PublishDate = DateTime.Now;
+            PublishDate = publishDate;
         }
 
 

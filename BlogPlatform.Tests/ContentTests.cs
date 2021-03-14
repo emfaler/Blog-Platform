@@ -9,53 +9,53 @@ namespace blog_template_practice.Tests
     
     public class ContentTests
     {
-        //Content sut;
+        Content sut;
 
-        //public ContentTests()
-        //{
-        //    sut = new Content(1, "Content title", "This is the body of the blog content", 
-        //        "Blog author name", "10/13/2020");
-        //}
+        public ContentTests()
+        {
+            sut = new Content(1, "Content title", "This is the body of the blog content",
+                "Blog author name", DateTime.Now);
+        }
 
-        //[Fact]
-        //public void ContentContructor_Should_Set_Id()
-        //{
-        //    int result = sut.Id;
+        [Fact]
+        public void ContentContructor_Should_Set_Id()
+        {
+            int result = sut.Id;
 
-        //    Assert.Equal(1, result);
-        //}
+            Assert.Equal(1, result);
+        }
 
-        //[Fact]
-        //public void ContentConstructor_Should_Set_Title()
-        //{
-        //    string result = sut.Title;
+        [Fact]
+        public void ContentConstructor_Should_Set_Title()
+        {
+            string result = sut.Title;
 
-        //    Assert.Equal("Content title", result);
-        //}
+            Assert.Equal("Content title", result);
+        }
 
-        //[Fact]
-        //public void ContentConstructor_Should_Set_Body()
-        //{
-        //    string result = sut.Body;
+        [Fact]
+        public void ContentConstructor_Should_Set_Body()
+        {
+            string result = sut.Body;
 
-        //    Assert.Equal("This is the body of the blog content", result);
-        //}
+            Assert.Equal("This is the body of the blog content", result);
+        }
 
-        //[Fact]
-        //public void ContentConstructor_Should_Set_Author()
-        //{
-        //    string result = sut.Author;
+        [Fact]
+        public void ContentConstructor_Should_Set_Author()
+        {
+            string result = sut.Author;
 
-        //    Assert.Equal("Blog author name", result);
-        //}
+            Assert.Equal("Blog author name", result);
+        }
 
-        //[Fact]
-        //public void ContentConstructor_Should_Set_PublishDate()
-        //{
-        //    string result = sut.PublishDate;
+        [Fact]
+        public void ContentConstructor_Should_Set_PublishDate()
+        {
+            DateTime result = sut.PublishDate;
 
-        //    Assert.Equal("10/13/2020", result);
-        //}
+            Assert.Equal(DateTime.Now, result);
+        }
 
     }
 }
