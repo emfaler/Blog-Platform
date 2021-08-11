@@ -86,7 +86,7 @@ namespace BlogPlatform.Migrations
                             Author = "Ina Garten",
                             Body = "EVOO, Fresh herbs, and carbs.",
                             CategoryId = 1,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 350, DateTimeKind.Local).AddTicks(7593),
+                            PublishDate = new DateTime(2021, 8, 11, 12, 38, 22, 934, DateTimeKind.Local).AddTicks(7953),
                             Title = "Italian Cooking 101"
                         },
                         new
@@ -95,7 +95,7 @@ namespace BlogPlatform.Migrations
                             Author = "Ira Glass",
                             Body = "So many new podcasts to listen. Here are our picks.",
                             CategoryId = 2,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 361, DateTimeKind.Local).AddTicks(4196),
+                            PublishDate = new DateTime(2021, 8, 11, 12, 38, 22, 938, DateTimeKind.Local).AddTicks(2502),
                             Title = "Podcast Mania"
                         },
                         new
@@ -104,7 +104,7 @@ namespace BlogPlatform.Migrations
                             Author = "Rick Steves",
                             Body = "Hop on a train and get moving",
                             CategoryId = 3,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 361, DateTimeKind.Local).AddTicks(4331),
+                            PublishDate = new DateTime(2021, 8, 11, 12, 38, 22, 938, DateTimeKind.Local).AddTicks(2551),
                             Title = "Norway In a Day"
                         },
                         new
@@ -113,7 +113,7 @@ namespace BlogPlatform.Migrations
                             Author = "Tanzena Vega",
                             Body = "The canals do not smell and are great for long rides on a hot day",
                             CategoryId = 1,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 361, DateTimeKind.Local).AddTicks(4340),
+                            PublishDate = new DateTime(2021, 8, 11, 12, 38, 22, 938, DateTimeKind.Local).AddTicks(2557),
                             Title = "Venice"
                         },
                         new
@@ -122,7 +122,7 @@ namespace BlogPlatform.Migrations
                             Author = "Michelle Pfiefer",
                             Body = "Britney's new single is an offensively crafted BOP for the ages.",
                             CategoryId = 2,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 361, DateTimeKind.Local).AddTicks(4348),
+                            PublishDate = new DateTime(2021, 8, 11, 12, 38, 22, 938, DateTimeKind.Local).AddTicks(2562),
                             Title = "New Music Friday"
                         },
                         new
@@ -131,7 +131,7 @@ namespace BlogPlatform.Migrations
                             Author = "Gloria Estaban",
                             Body = "You can go anywhere with these direct flights to top destinations.",
                             CategoryId = 3,
-                            PublishDate = new DateTime(2021, 3, 13, 22, 37, 58, 361, DateTimeKind.Local).AddTicks(4357),
+                            PublishDate = new DateTime(2021, 8, 11, 12, 38, 22, 938, DateTimeKind.Local).AddTicks(2566),
                             Title = "50 Direct Flights"
                         });
                 });
