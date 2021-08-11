@@ -1,0 +1,11 @@
+﻿body {
+    background-color: whitesmoke;
+    font-size: 1.1em;
+    background-image: url("Images/Blog Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
