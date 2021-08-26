@@ -1,0 +1,25 @@
+﻿body {
+    background-color: whitesmoke;
+    font-size: 1.1em;
+    background-image: url("Images/Blog Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    width: 300px;
+    background: rgba(42, 34, 41, .6);
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 7px;
+}
+
+.buttonBox {
+    padding-bottom: 1.5em;
+    width: 200px;
+}
+

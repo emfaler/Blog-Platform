@@ -10,25 +10,31 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Content Index</title>
-    <link rel="StyleSheet" type="text/css" href="~/Styles/StyleSheet.css" />
+    <link rel="StyleSheet" type="text/css" href="~/Style.css" />
 </head>
 <body>
     <h1>Content Index</h1>
+    <div class="buttonBox">
+        <a href="/Content/Create/"><button id="createButton">Create Post</button></a>
 
+        <a href="/Category/Index"><button id="createButton">Categories</button></a>
 
-    @foreach (var content in Model)
-    {
+    </div>
 
-        <div class="box">
+    <div class="box">
+        @foreach (var content in Model)
+        {
+
             <div class="content">
                 <h2 class="contentTitle">Title: <a href="/Content/Details/@content.Id">@content.Title</a></h2>
                 <p>Author: @content.Author</p>
             </div>
-        </div>
-    }
+        }
+    </div>
 
-    <a href="/Content/Create/"><button id="createButton">Create Post</button></a>
+    <footer>
+        &copy; 2021 Eric Faler
+    </footer>
 
-    <a href="/Category/Index"><button id="createButton">Categories</button></a>
 </body>
 </html>
