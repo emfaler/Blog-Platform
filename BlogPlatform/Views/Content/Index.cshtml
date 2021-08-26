@@ -14,23 +14,27 @@
 </head>
 <body>
     <h1>Content Index</h1>
-        <div class="buttonBox">
-            <a href="/Content/Create/"><button id="createButton">Create Post</button></a>
+    <div class="buttonBox">
+        <a href="/Content/Create/"><button id="createButton">Create Post</button></a>
 
-            <a href="/Category/Index"><button id="createButton">Categories</button></a>
+        <a href="/Category/Index"><button id="createButton">Categories</button></a>
 
-        </div>
+    </div>
 
-        <div class="box">
-    @foreach (var content in Model)
-    {
+    <div class="box">
+        @foreach (var content in Model)
+        {
 
             <div class="content">
                 <h2 class="contentTitle">Title: <a href="/Content/Details/@content.Id">@content.Title</a></h2>
                 <p>Author: @content.Author</p>
             </div>
-    }
-        </div>
+        }
+    </div>
+
+    <footer>
+        &copy; 2021 Eric Faler
+    </footer>
 
 </body>
 </html>

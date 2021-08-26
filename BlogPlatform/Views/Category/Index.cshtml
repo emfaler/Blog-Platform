@@ -1,13 +1,28 @@
 ﻿@model IEnumerable<blog_template_practice.Models.Category>
 @{
-    Layout = null; 
+    Layout = null;
 }
-@*Homepage*@
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+    <link rel="StyleSheet" type="text/css" href="~/Style.css" />
+</head>
+<body>
 <h1>Categories</h1>
 
 
-    @foreach(var cat in Model)
-    {
-        <p><a href="/Category/Details/@cat.Id">@cat.Name</a></p>
-    }
+@foreach (var cat in Model)
+{
+    <p><a href="/Category/Details/@cat.Id">@cat.Name</a></p>
+}
 <p><a href="/Content/Index">Back To Content</a></p>
+    
+</body>
+</html>
+
