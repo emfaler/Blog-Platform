@@ -13,8 +13,7 @@
 .box {
     width: 300px;
     background: rgba(42, 34, 41, .7);
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
     border-radius: 7px;
 }
 
@@ -30,10 +29,28 @@ div > h2 > a {
     color: rgb(219, 161, 26);
 }
 
+
+
 .contentAuthor {
     font-size: 1.2em;
     
 }
+
+#categoryIndexBox {
+    width: 250px;
+    background: rgba(42, 34, 41, .7);
+    padding: 1em;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#backToContents {
+    padding: 1em;
+}
+
+
 
 footer {
     padding: 1em;
