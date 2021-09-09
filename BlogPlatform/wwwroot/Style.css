@@ -12,7 +12,7 @@
 
 .box {
     width: 300px;
-    background: rgba(42, 34, 41, .6);
+    background: rgba(42, 34, 41, .7);
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 7px;
@@ -20,6 +20,23 @@
 
 .buttonBox {
     padding-bottom: 1.5em;
-    width: 200px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div > h2 > a {
+    color: rgb(219, 161, 26);
+}
+
+.contentAuthor {
+    font-size: 1.2em;
+    
+}
+
+footer {
+    padding: 1em;
+    font-size: 1.5em;
 }
 
