@@ -9,18 +9,23 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Details</title>
+    <link rel="StyleSheet" type="text/css" href="~/Style.css" />
 </head>
 <body>
-    @foreach (var content in Model.Content)
-    {
-    <div class="contentList">
-        <p>@content.Title</p>
-        <p>@content.Author</p>
-        <p>@content.PublishDate</p>
-        <p>@content.Body</p>
+    <div class="box">
+        @foreach (var content in Model.Content)
+        {
+            <div class="contentList">
+                <h1>@content.Title</h1>
+                <h3>@content.Author</h3>
+                <p>@content.PublishDate</p>
+                <p>@content.Body</p>
+            </div>
+        }
     </div>
-        
-    }
-    <a href="/Category/Index"><button id="createButton">Back to Categories</button></a>
+    <a href="/Category/Index" id="backToContents"><button>Back to Categories</button></a>
 </body>
 </html>
+<footer>
+    &copy; 2021 Eric Faler
+</footer>

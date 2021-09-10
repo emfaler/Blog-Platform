@@ -50,7 +50,7 @@ namespace blog_template_practice
                     Id = 1,
                     CategoryId = 1,
                     Title = "Italian Cooking 101",
-                    Body = "EVOO, Fresh herbs, and carbs.",
+                    Body = "There's never been a better time to channel your inner Italian. Be sure to always use fresh herbs and GOOD EVOO.",
                     Author = "Ina Garten",
                     PublishDate = DateTime.Now
                 },
@@ -68,17 +68,17 @@ namespace blog_template_practice
                     Id = 3,
                     CategoryId = 3,
                     Title = "Norway In a Day",
-                    Body = "Hop on a train and get moving",
+                    Body = "Hop on a train and get moving. Tis the season for a picturesque getaway.",
                     Author = "Rick Steves",
                     PublishDate = DateTime.Now
                 },
                 new Content()
                 {
                     Id = 4,
-                    CategoryId = 1,
+                    CategoryId =1,
                     Title = "Venice",
-                    Body = "The canals do not smell and are great for long rides on a hot day",
-                    Author = "Tanzena Vega",
+                    Body = "The canals of Venice provide a romantic way to travel through the city. Use the canals to visit a number of great restaurants.",
+                    Author = "Tanzina Vega",
                     PublishDate = DateTime.Now
                 },
                 new Content()
@@ -86,8 +86,8 @@ namespace blog_template_practice
                     Id = 5,
                     CategoryId = 2,
                     Title = "New Music Friday",
-                    Body = "Britney's new single is an offensively crafted BOP for the ages.",
-                    Author = "Michelle Pfiefer",
+                    Body = "Yola's new album provides rich sound and blissful lyrings.",
+                    Author = "Eliza Moore",
                     PublishDate = DateTime.Now
                 },
                 new Content()
@@ -96,7 +96,7 @@ namespace blog_template_practice
                     CategoryId = 3,
                     Title = "50 Direct Flights",
                     Body = "You can go anywhere with these direct flights to top destinations.",
-                    Author = "Gloria Estaban",
+                    Author = "Samantha Gomez",
                     PublishDate = DateTime.Now
                 }
                 );

@@ -1,0 +1,62 @@
+﻿body {
+    background-color: whitesmoke;
+    font-size: 1.1em;
+    background-image: url("Images/Blog Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    width: 300px;
+    padding: 1em;
+    border-radius: 7px;
+    background: rgba(117, 104, 87, .8);
+}
+
+.buttonBox {
+    padding-bottom: 1.5em;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div > h2 > a {
+    color: rgb(219, 161, 26);
+}
+
+
+
+.contentAuthor {
+    font-size: 1.2em;
+    
+}
+
+
+
+#categoryIndexBox {
+    width: 250px;
+    background: rgba(42, 34, 41, .7);
+    padding: 1em;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#backToContents {
+    padding: 1em;
+    
+}
+
+
+
+footer {
+    padding: 1em;
+    font-size: 1.5em;
+}
+
