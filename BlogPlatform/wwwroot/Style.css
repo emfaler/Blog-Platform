@@ -12,9 +12,9 @@
 
 .box {
     width: 300px;
-    background: rgba(42, 34, 41, .7);
     padding: 1em;
     border-radius: 7px;
+    background: rgba(117, 104, 87, .8);
 }
 
 .buttonBox {
@@ -36,6 +36,8 @@ div > h2 > a {
     
 }
 
+
+
 #categoryIndexBox {
     width: 250px;
     background: rgba(42, 34, 41, .7);
@@ -48,6 +50,7 @@ div > h2 > a {
 
 #backToContents {
     padding: 1em;
+    
 }
 
 
